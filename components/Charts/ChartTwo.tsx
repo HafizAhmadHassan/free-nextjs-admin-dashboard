@@ -51,7 +51,7 @@ const options: ApexOptions = {
   },
 
   xaxis: {
-    categories: ["M", "T", "W", "T", "F", "S", "S"],
+    categories: ["Online", "Offline", "Damage", "Full", "Half"],
   },
   legend: {
     position: "top",
@@ -80,12 +80,8 @@ const ChartTwo: React.FC = () => {
   const [state, setState] = useState<ChartTwoState>({
     series: [
       {
-        name: "Sales",
+        name: "Machine Status",
         data: [44, 55, 41, 67, 22, 43, 65],
-      },
-      {
-        name: "Revenue",
-        data: [13, 23, 20, 8, 13, 27, 15],
       },
     ],
   });
